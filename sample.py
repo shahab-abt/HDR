@@ -11,10 +11,11 @@ if __name__ == '__main__':
     image_matching.load_images("Images/Wikipedia/")
 
     # by replacing to light or to dark values with random values i try to stop sift to be interested in this parts
-    image_matching.radomize_unwanted()
+    #image_matching.radomize_unwanted()
 
-    image_matching.display()
+    #image_matching.display()
     image_matching.create_sift()
+    image_matching.find_Homography()
 
 
     sample = HDRTutorial()
