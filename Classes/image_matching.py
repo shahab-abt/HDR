@@ -91,6 +91,8 @@ class ImageMatching:
         matches = flann.knnMatch(self.descriptors_1, self.descriptors_2, k=2)
         good_matches = []
 
+
+
         for m, n in matches:
             if m.distance < 0.7 * n.distance:
                 good_matches.append(m)
